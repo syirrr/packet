@@ -77,10 +77,10 @@ int main (void)
 	strcpy(data , "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 	
 	//some address resolution
-	strcpy(source_ip , "10.12.6.163"); //your ip
+	strcpy(source_ip , "192.168.227.1"); //your ip
 	sin.sin_family = AF_INET;
 	sin.sin_port = htons(80);
-	sin.sin_addr.s_addr = inet_addr ("10.12.6.163"); //destination ip
+	sin.sin_addr.s_addr = inet_addr ("192.168.227.255"); //destination ip
 	
 	//Fill in the IP Header
 	iph->ihl = 5;
